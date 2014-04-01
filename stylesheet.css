@@ -1,0 +1,31 @@
+body{
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    font-weight: 1em;
+    background-color:#929bb1;
+   
+    }
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #9bb192;
+    text-shadow: 1px 4px 5px #000;
+}
+
+li {
+    border:1px solid;
+    border-radius:2px;
+    width: 2em;
+    padding: 5px 10px 5px 5px;
+    background-color:green;
+    color:white;
+    font-size: 25px;
+    border-width:3px;
+    
+    }
+    
+ form {
+     font-size:30px;
+     color:white;
+     margin: auto;
+ }
