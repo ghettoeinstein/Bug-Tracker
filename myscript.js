@@ -8,7 +8,8 @@ window.onload = function() {
   bugObject.incompleteBugs = [];
   json = JSON.stringify(bugObject);
   localStorage.setItem("bugObject", json);
-
+   
+  
  
  }
  
@@ -21,14 +22,19 @@ window.onload = function() {
     var textnode = document.createTextNode(bug);
     node.appendChild(textnode);
     document.getElementById('bugList').appendChild(node);
-    
+    //Retrieve a JSON representation of the bugObject
     var retrievedJson = localStorage.getItem("bugObject");
     bugObject = JSON.parse(retrievedJson);
+    
+    //Add the bug in current window 
     bugObject.completedBugs.push(bug);
     
+    //Storage object again
     json = JSON.stringify(bugObject);
     localStorage.setItem("bugObject", json);
     
-    
+    //clear the input field
+    document.getElementById('bug').value = "";
+     alert("Bug added successfully!");
     }
  

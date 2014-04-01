@@ -7,11 +7,16 @@ body{
 html, body {
     height: 100;
 }
-h1 {
+header {
     text-align: center;
     font-size: 80px;
     color: #9bb192;
     text-shadow: 1px 4px 5px #000;
+}
+
+li:hover {
+    text-decoration:underline;
+    color:blue;
 }
 
 li {

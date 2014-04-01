@@ -1,24 +1,36 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title> Bug Tracker </title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <meta name="description"
+        content=" This is an application to keep 
+        track of completed and incomplete bugs for QA.">
+        <meta name="author" content "Caleb Saunders">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
     </head>
     <body>
-        <div id="header">
-            <h1 id="title"> Bug Tracker</h1>
-        </div> 
-         <div id ="mainContent">
-         
+       
+        <div id ="container">
+        
+            <header>
+            Bug Tracker
+            </header>
+                <div>
+                    <section>
+                    Bug Number: <input type="text" id = 'bug' size = 15 />
+                    <input type="button" value="Add bug to list" onclick='addBug()'>
+                    
+                        <ul id="bugList">
+                        </ul>
+                    </section>
+                </div>
             
-            Bug Number: <input type="text" id = 'bug' size = 15 />
-            <input type="button" value="Add bug to list" onclick='addBug()'>
-            
-            <ul id="bugList">
-             </ul>
+            <div id="footer">
+            <p> Created by Caleb Saunders (c) 2014 </p>
+            </div>
          </div>
-        <div id="footer">
-          <p> Created by Caleb Saunders (c) 2014 </p>
-        </div>
             <script src="myscript.js"></script>
     </body>
 
